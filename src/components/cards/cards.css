@@ -1,0 +1,89 @@
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    color: black;
+}
+img{
+    width: 100%;
+}
+.cardsmain{
+    display: grid;
+    grid-template-columns: 250px 250px 250px  250px ;
+    grid-gap: 40px;
+    margin-right: 100px;
+    margin-top: 200px;
+    position: absolute;
+    z-index: -1;
+    margin-bottom: 150px;
+}
+.carddetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;   
+}
+h5{
+    font-size: 15px;
+    margin: 5px 5px;
+}
+h4{
+    margin: 5px 5px;
+}
+
+
+    
+@media only screen and (max-width:1280px){
+    .cardsmain{
+        grid-template-columns: 250px 250px 250px  250px ;
+        margin-left: 80px;
+    }
+    h5{
+        font-size: 10px;
+        margin: 2px 2px;
+    }
+    h4{
+        margin: 2px 2px;
+    }
+    
+}
+
+@media only screen and (max-width:1020px){
+    .cardsmain{
+        grid-template-columns: 250px 250px 250px;
+    }
+    h5{
+        font-size: 10px;
+        margin: 2px 2px;
+    }
+    h4{
+        margin: 2px 2px;
+    }
+    
+}
+@media only screen and (max-width:900px){
+    .cardsmain{
+        grid-template-columns: 200px 200px 200px;
+        margin-left: 100px;
+    }
+    h5{
+        font-size:15px;
+    }
+  }
+  @media only screen and (max-width:350px){
+    .cardsmain{
+        grid-template-columns: 120px 120px ;
+       grid-gap: 10px;
+       margin-left: 10px;
+       
+    }
+    h5 {
+        font-size: 8px;
+    }
+    h4{
+        font-size: 9px;
+    }
+  }

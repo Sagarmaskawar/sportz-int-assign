@@ -15,7 +15,7 @@ const Cards = () => {
         { 
             cards.map((d)=>{
                 return(
-                    <div className='cards'>
+                    <div className='cards' id={d.Id}>
                     {/*images getting from player image folder */}
                     <img src={require(`../player-images/${d.Id}.jpg`)}/>
                    <div className='carddetails'>

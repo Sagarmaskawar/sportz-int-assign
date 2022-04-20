@@ -5,8 +5,9 @@
 
 .header{
   position: fixed;
-  background-color:red;
+  background-color:white;
   width: 100%;
+  transition: 1s;
 }
 .head{
   position: fixed;
@@ -74,8 +75,8 @@ i{
     width: 100%;
   }
   .head h1{
-    font-size: 5px;
-    margin-left: -500px;
+    font-size: 15px;
+    margin-left: 30px;
   }
   .header h1{
     font-size: 12px;

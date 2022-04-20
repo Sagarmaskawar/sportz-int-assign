@@ -1,19 +1,29 @@
 import React from 'react'
-import { useContext } from 'react';
+import { useContext,useState,useEffect,useCallback } from 'react';
 import Moment from 'react-moment';
 import { CardContext,} from '../../App';
 import './cards.css'
 const Cards = () => {
     {/*useContext that we get from app component */}
     const cards=useContext(CardContext);
-   const date= new Date('2/10/2019 12:00:00 AM');
-   console.log(date.getTimezoneOffset()/60);
+    
+   
+    
+    
+    
+
+    
+      
+ 
+  
     
   return (
     <div className='cardsmain'>
 {/*mapping cards data */}
         { 
-            cards.map((d)=>{
+        cards.length <1 ? <h1>No data found</h1>:cards && cards.sort((a,b)=>{
+            return a.Value-b.Value
+        }).map((d)=>{
                 return(
                     <div className='cards' id={d.Id}>
                     {/*images getting from player image folder */}
@@ -65,6 +75,7 @@ const Cards = () => {
                
             })
         }
+     
     </div>
   )
 }

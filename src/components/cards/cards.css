@@ -6,6 +6,7 @@
     border: 1px solid gray;
     background-color: whitesmoke;
     color: black;
+    box-shadow: 2px 2px 2px 2px lightblue;
 }
 img{
     width: 100%;
@@ -26,11 +27,12 @@ img{
     justify-content: flex-start;
     align-items: flex-start;   
 }
-h5{
-    font-size: 15px;
+.carddetails h5{
+    font-size: 12px;
     margin: 5px 5px;
 }
 h4{
+    font-size: 20px;
     margin: 5px 5px;
 }
 
@@ -75,15 +77,15 @@ h4{
   }
   @media only screen and (max-width:350px){
     .cardsmain{
-        grid-template-columns: 120px 120px ;
+        grid-template-columns: 300px ;
        grid-gap: 10px;
-       margin-left: 10px;
+       margin-left: 20px;
        
     }
     h5 {
-        font-size: 8px;
+        font-size: 15px;
     }
     h4{
-        font-size: 9px;
+        font-size: 18px;
     }
   }
